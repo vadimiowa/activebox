@@ -1,0 +1,219 @@
+@media (max-width: 1083px) { /* PRO */
+/*//////  WORKS  //////*/
+    .works {
+        margin-bottom: 60px;
+    }
+
+    .works__item {
+        width: 50%;
+    }
+
+/*//////  TEAM  //////*/
+    .team {
+        margin-bottom: 60px;
+    }
+
+    .team__persona {
+        width: 50%;
+        text-align: center;
+    }
+
+    .team__persona--light {
+        margin-bottom: 40px;
+    }
+
+    .team__subtitle {
+        padding: 0 20px;
+    }
+
+    .team__photo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .socialsvg--team {
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 951px) { /* MAC */
+/*//////  INTRO  //////*/
+    .intro__title {
+        font-size: 40px;
+    }
+
+    .intro__subtitle {
+        font-size: 18px;
+    }
+
+/*//////  NAV  //////*/
+    .nav {
+      display: none;
+      position: absolute;
+      flex-direction: column;
+      top: 100%;
+      left: 0;
+      width: 100%;
+
+      background-color: #af424da8;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .nav__link {
+        margin: 0;
+        padding: 10px 20px;
+    }
+
+    .nav__link.black {
+        color: #fff;
+    }
+
+/*//////  BURGER  //////*/
+    .burger {
+        display: block;
+    }
+
+/*//////  FEATURES  //////*/
+    .features {
+        margin: 80px 0px 0px 0px;
+    }
+
+    .features__feature {
+        flex: 50%;
+        margin-bottom: 80px;
+    }
+
+/*//////  CLIENTS  //////*/
+    .clients__photo {
+        width: 100%;
+    }
+
+    .clients__content {
+        width: 100%;
+        padding: 0;
+        margin-top: 25px;
+    }
+
+    .clients__img {
+        right: -15px;
+    }
+
+    .clients__text {
+        font-size: 30px;
+    }
+
+    .clients__author {
+        margin: 0px 0px 40px 0px;
+    }
+}
+
+
+@media (max-width: 767px) { /* IPAD */
+/*//////  INTRO  //////*/
+    .intro {
+        height: auto;
+        padding-top: 350px;
+        padding-bottom: 300px;
+    }
+
+    .intro__title {
+        font-size: 30px;
+    }
+
+    .intro__subtitle {
+        font-size: 12px;
+        margin-bottom: 35px;
+    }
+
+/*//////  FEATURES  //////*/
+    .features {
+        margin: 60px 0px 0px 0px;
+    }
+
+    .features__feature {
+        flex: 50%;
+        margin-bottom: 60px;
+    }
+}
+
+
+@media (max-width: 551px) { /*IPHONE*/
+/*//////  FEATURES  //////*/
+    .features__feature {
+        flex: 100%;
+    }
+
+/*//////  WORKS  //////*/
+    .works__item {
+        width: 100%;
+        border-right: 0;
+        border-bottom: 2px solid #fff;
+        height: 300px;
+    }
+
+/*//////  TEAM  //////*/
+    .team__persona {
+        width: 100%;
+    }
+
+    .team__persona--light2 {
+        margin-bottom: 40px;
+    }
+
+/*//////  FOOTER  //////*/
+    .footer__inner {
+        padding: 20px 0px 20px 0px;
+    }
+
+    .footer__address {
+        margin-bottom: 20px;
+    }
+
+    .footer__block {
+        width: 100%;
+        border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
+        margin-bottom: 20px;
+    }
+
+    .footer__block:last-child {
+        border: none;
+        margin-bottom: 0;
+    }
+
+    .container--footer {
+        padding: 0;
+    }
+
+    .socialsvg--footer {
+        margin-bottom: 20px;
+    }
+
+/* SCRIPT ANIMATION */
+    .features__feature.feaAnima {
+        animation-name: speed;
+        animation-duration: 2s;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
