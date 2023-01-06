@@ -210,7 +210,8 @@ burgerClick.addEventListener("click", function() {
 })
 
 
-
+let testInfo = document.querySelector('#testCopy');
+console.log(testInfo);
 
 
 
