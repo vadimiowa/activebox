@@ -64,6 +64,7 @@ window.addEventListener("scroll", function () {
 })
 
 
+/* //////  FUNCTION  ///   NUMBER PLUS THREE   ////// */
 function infoLike(a, b) {
     let likeObject = a + b;
     console.log(likeObject);
@@ -72,7 +73,7 @@ function infoLike(a, b) {
 infoLike(5000, 5000);
 
 
-/* //////  FUNCTION  ///   ANIMATION   ////// */
+/* //////  FUNCTION  ///   ANIMATION FEATURES   ////// */
 let animationFeatures1 = document.querySelector('#feaAnima1');
 let animationFeatures2 = document.querySelector('#feaAnima2');
 let animationFeatures3 = document.querySelector('#feaAnima3');
@@ -120,7 +121,7 @@ window.addEventListener("scroll", function() {
     }
 })
 
-/* ANIMATION FOR IPHONE BLOCK TEAM */
+/* ANIMATION FOR IPHONE ////// BLOCK TEAM */
 let animationPhotoTeamNamber1 = document.querySelector('#teamPhotoAnimation1');
 
 let animationPhotoTeamNamber2 = document.querySelector('#teamPhotoAnimation2');
@@ -189,7 +190,43 @@ document.addEventListener('DOMContentLoaded', function() {
 
         })
     }
-});
+})
+
+
+/* FUNCTION  ///  SCROLL TOP FOR LOGO */
+document.addEventListener('DOMContentLoaded', function() {
+    const topActive = document.querySelectorAll('#zeroNew');
+
+    for(let i = 0; i < topActive.length; i++) {
+
+        topActive[i].addEventListener('click', function(event) {
+            event.preventDefault();
+
+    const activeID = event.target.getAttribute('href').substring(1);
+
+            document.getElementById(activeID).scrollIntoView({
+                behavior: 'smooth',
+                block: "start"
+            })
+
+        })
+    }
+})
+
+
+
+let zero = document.querySelector('#zeroNew');
+
+window.addEventListener('scroll', function() {
+    let zeroget = window.scrollY;
+
+    if(zeroget > 500) {
+        zero.classList.add('zeroll')
+    } else {
+        zero.classList.remove('zeroll')
+    }
+})
+
 
 
 /* FUNCTION  ///  CLICK */
@@ -210,8 +247,6 @@ burgerClick.addEventListener("click", function() {
 })
 
 
-let testInfo = document.querySelector('#testCopy');
-console.log(testInfo);
 
 
 
@@ -223,41 +258,5 @@ console.log(testInfo);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-/* let nav = document.querySelector('#navClick');
-
-window.addEventListener("scroll", function() {
-    let navtwo = window.scrollY;
-
-    if(navtwo > 0) {
-        nav.classList.add('active');
-    } else {
-        nav.classList.remove('active');
-    }
-})
-
-
-let navll = document.querySelector('#navClickTwo');
-
-window.addEventListener("scroll", function() {
-    let navii = window.scrollY;
-
-    if(navii > 0) {
-        navll.classList.add('active');
-    } else {
-        navll.classList.remove('active');
-    }
-})
- */
 
 
